@@ -1,1 +1,0 @@
-# yagodosgit.github.io
