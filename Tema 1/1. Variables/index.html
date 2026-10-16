@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://mydomain.org/mysite/Tema%201/1.%20Variables/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Variables - Aprender a programar GDScript</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../extra/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Variables";
+        var mkdocs_page_input_path = "Tema 1/1. Variables.md";
+        var mkdocs_page_url = "/mysite/Tema%201/1.%20Variables/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Aprender a programar GDScript
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Bienvenide a aprender a programar GDScript</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../Preparativos/">Preparativos</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tema 0</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Tema%200/Tema0/">Introducción a la programación</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tema 1</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Variables</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#basic-built-in-types">Basic built-in types</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#crear-una-variable">Crear una variable</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#variables-sin-valor">Variables sin valor</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#variables-tipadas-o-no-tipadas">Variables tipadas o no tipadas</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#strings">Strings</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ejemplos-strings">Ejemplos strings</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#uso-de-variables">Uso de variables</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#alojamiento-de-una-variable">Alojamiento de una variable</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.%20Operadores/">Operadores</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Ejercicios Variables</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/AIntroduccion/">Introducción</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Ejercicio1/">Ejercicio 1</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Ejercicio2/">Ejercicio 2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Solucion_ej1/">Solución ejercicio 1</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Solucion_ej2/">Solución ejercicio 2</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Aprender a programar GDScript</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tema 1</li>
+      <li class="breadcrumb-item active">Variables</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="variables">Variables</h1>
+<p>La programación es en realidad un proceso de leer datos y hacer operaciones y devolver un resultado. Los principales elementos con los que operar son nuestras variables. Esto son cajitas donde guardamos números. Además literal.</p>
+<h2 id="basic-built-in-types">Basic built-in types</h2>
+<p>En GDScript hay muchos tipos de variables, pero las variables simples (tipos simples de datos) solo hay 3.</p>
+<ul>
+<li><code>bool</code> - Es una variable que solo puede contener 2 valores: <code>true</code> o <code>false</code>. Se puede entender como un interruptor encendido o apagado o como 1 o 0. En muchos contextos 0 significa <code>false</code> y cualquier otro número distinto de 0 siginifica <code>true</code>.</li>
+<li><code>int</code> - Almacena números enteros, esto son los que no tienen decimales.</li>
+<li><code>float</code> - Almacena números con decimales.</li>
+</ul>
+<h2 id="crear-una-variable">Crear una variable</h2>
+<p>Cuando creamos una variable, esta se aloja en la memoria de nuestro ordenador con el valor asignado.</p>
+<div class="admonition note">
+<p class="admonition-title">Sintaxis</p>
+<p>La sintaxis base para crear variables es:</p>
+<p><code>var</code> <code>&lt;nombre variable&gt;</code> <code>:</code> <code>&lt;tipo variable&gt;</code> <code>=</code> <code>&lt;valor variable&gt;</code> </p>
+</div>
+<p>Entonces si en Godot hacemos:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">var</span><span class="w"> </span><span class="n">x</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">40</span>
+</code></pre></div>
+<p>Estaríamos creando una variable de tipo <code>int</code> con el valor 40 y llamada <code>x</code>. Esto quiere decir que podemos acceder a ella refiriéndonos como <code>x</code>.</p>
+<p>Si hacemos:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span>
+</code></pre></div>
+<p>Cual será ahora el valor de x?</p>
+<details>
+<summary>respuesta</summary>
+42. Efectivamente. Toma una galletita te lo mereces -> 🍪
+</details>
+<hr />
+<h3 id="variables-sin-valor">Variables sin valor</h3>
+<p>Las variables también pueden crearse sin especificar su valor. Ejemplo:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">var</span><span class="w"> </span><span class="n">x</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">float</span><span class="w"> </span>
+</code></pre></div>
+<p>Estas variables se dicen 'no inicializadas', no tienen valores hasta que alguien les asigne uno.<br />
+Ej. <code>x = 1.14</code>  </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Las variables no inicializadas no pueden ser leidas/usadas para algo que no sea asignarles un valor.<br />
+Ejemplos mal: <code>print(x)</code> o <code>var y: float = x + 3</code></p>
+</div>
+<h3 id="variables-tipadas-o-no-tipadas">Variables tipadas o no tipadas</h3>
+<p>Hasta ahora hemos especificado el tipo de las variables al crear una, esto realmente no es obligatorio en lenguajes como GDScript o Python, pero es altamente recomendable. De hecho en muchos lenguajes es más que obligatorio.</p>
+<p>Es decir, <code>var x = 123</code> es perfectamente válido y equivalente a <code>var x: int = 123</code>. Pero estás dándole a Godot la carga de trabajo de averiguar que tipo es esa x.</p>
+<p>Además que tener todo tipado hace que godot te avise cuando estés haciendo algo mal, y esta ayuda no te la puede ofrecer si no sabe de que tipo es cada cosa.</p>
+<div class="admonition hint recomendación importante">
+<p class="admonition-title">Hint</p>
+<p>Siempre tipar las variables. Siempre especificar el tipo de todo.</p>
+</div>
+<p>* Se permiten excepciones, puede haber justificación.</p>
+<h2 id="strings">Strings</h2>
+<p>Los strings no son un tipo simple como los anteriores, pero son importantísimos.</p>
+<p>Un String es una cadena de caracteres, esto puede ser una letra, una frase entera o un archivo de texto entero. Los Strings son objetos (ya veremos lo que son). La idea es que son un objeto más complejo y con mas chicha que las variables que acabamos de ver. Pero es ideal explicarlo ya porque es uno de los tipos más utilizados.</p>
+<ul>
+<li>
+<p>Todos los tipos complejos se escriben con la primera mayúscula, <code>String</code>. Los únicos tipos simples (empiezan en minúsculas) son los vistos <code>int</code>, <code>float</code>, <code>bool</code>.</p>
+</li>
+<li>
+<p>El valor de los strings van entre comillas.</p>
+</li>
+</ul>
+<h4 id="ejemplos-strings">Ejemplos strings</h4>
+<p>Declarar un string:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">var</span><span class="w"> </span><span class="n">saludo</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Hola mundo"</span>
+</code></pre></div></p>
+<p>Que pasará si...</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">var</span><span class="w"> </span><span class="n">saludo</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Hola mundo"</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">saludo</span><span class="p">)</span>
+</code></pre></div>
+<p>Es esto lo mismo que:</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>print("Hola mundo")
+</code></pre></div>
+?</p>
+<details>
+<summary>respuesta</summary>
+Sí. La variable saludo en si es exactamente lo mismo que "Hola mundo". Una forma de verlo es que "Hola mundo" ya es una variable que ha creado godot pero sin nombre. Simplemente se la estamos asignando a `saludo` para no perderla. Y pues obviamente al printear por pantalla el valor de la variable pues printea el contenido "Hola mundo".
+</details>
+<hr />
+<h2 id="uso-de-variables">Uso de variables</h2>
+<h2 id="alojamiento-de-una-variable">Alojamiento de una variable</h2>
+<p>Por debajo de la manta Godot hace más cosas que solo poner una x con un valor. Esto es una abstracción que hacemos en los lenguajes de programación para ser felices programando.</p>
+<p align="center">
+  <img src="../../images/variable.png" alt="alt text" width="450">
+</p>
+
+<p>En esta imagen vemos que tenemos una variable numérica con el valor 42. Lo que vemos a la izquierda es la posición de la memoria del ordenador donde se encuentra este número, es algo así como la dirección de tu casa, pero para variables.</p>
+<p>En los lenguajes de programación de alto nivel no tenemos que especificar la dirección de memoria de una variable que queremos cambiar, pues les ponemos nombres y ya. En nuestro ejemplo habíamos llamado a la variable <code>x</code> y Godot solito sabe cuál es la dirección de memoria de esta variable <code>x</code>.</p>
+<p>Esta chapa puede no parecer relevante, pero en el futuro veremos tipos de objetos más complejos que estos y su correcto uso parte de entender como se alojan en memoria y que este concepto existe.</p>
+<p>Pinceladas de esta complejidad. Un String, en cuántas cajitas cabe? 1?, 2?, infinitas?, se van añadiendo?.<br />
+Ya lo veremos jeje.</p>
+<div class="admonition note">
+<p class="admonition-title">Resumen</p>
+<p>Tu creas variables y objetos tranquilamente en GDScript, pero debes saber que por debajo de la manta hay un proceso de alojamiento en memoria de estos datos. Para tipos más complejos de datos el proceso puede requerir que tengas en cuenta lo que está pasando por debajo.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Godot no te dirá nada, pero tu ordenador no tiene memoria infinita, no puedes crear infinitas variables u objetos tranquilamente porque te vas a quedar sin memoria RAM.</p>
+<p>Uno debe aprender lo que no hacer probándolo, así que ya veremos ejemplos donde nuestros ordenadores van a tirar pantallazo azul jeje</p>
+</div>
+              
+            </div>
+          </div>
+  
+
+  
+  
+    
+    <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../Tema%200/Tema0/" class="btn btn-neutral float-left" title="Introducción a la programación"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../2.%20Operadores/" class="btn btn-neutral float-right" title="Operadores">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  
+</footer>
+          
+  
+  
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../Tema%200/Tema0/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../2.%20Operadores/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../extra/extra.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

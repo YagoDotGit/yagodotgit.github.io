@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://mydomain.org/mysite/Tema%201/2.%20Operadores/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Operadores - Aprender a programar GDScript</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../extra/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Operadores";
+        var mkdocs_page_input_path = "Tema 1/2. Operadores.md";
+        var mkdocs_page_url = "/mysite/Tema%201/2.%20Operadores/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Aprender a programar GDScript
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Bienvenide a aprender a programar GDScript</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../Preparativos/">Preparativos</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tema 0</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Tema%200/Tema0/">Introducción a la programación</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tema 1</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1.%20Variables/">Variables</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Operadores</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#operadores-aritmeticos">Operadores aritméticos</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#sobre-operador">Sobre operador %</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#operadores-booleanos">Operadores booleanos</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#comparadores">Comparadores</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#ejemplo-comparaciones">Ejemplo comparaciones</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#asignacion">Asignación</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Ejercicios Variables</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/AIntroduccion/">Introducción</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Ejercicio1/">Ejercicio 1</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Ejercicio2/">Ejercicio 2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Solucion_ej1/">Solución ejercicio 1</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Solucion_ej2/">Solución ejercicio 2</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Aprender a programar GDScript</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tema 1</li>
+      <li class="breadcrumb-item active">Operadores</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="operadores">Operadores</h1>
+<p>Los operadores es lo que nos permite realizar operaciones entre las variables. Existen muchos operadores diferentes y dependen del tipo de variable que estemos operando. Digamos que cada variable define cómo se van a comportar los operadores con ellas.</p>
+<p>No es lo mismo la división de números enteros que la suma o división de números con decimales verdad? Pero el operador que usaremos es el mismo (división).</p>
+<h2 id="operadores-aritmeticos">Operadores aritméticos</h2>
+<p>Aquí se encuentran los operadores que todos conocemos.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Operador</th>
+<th style="text-align: center;">Símbolo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Suma</td>
+<td style="text-align: center;"><code>+</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">Resta</td>
+<td style="text-align: center;"><code>-</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">Multiplicación</td>
+<td style="text-align: center;"><code>*</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">División</td>
+<td style="text-align: center;"><code>/</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">Resto división</td>
+<td style="text-align: center;"><code>%</code></td>
+</tr>
+</tbody>
+</table>
+<p>Estos operadores van entre valores. Ejemplo: <code>3 - 5</code>. Obvio no? Pero el signo menos es peculiar, pues también es un operador unario. Pues también sirve para indicar si un número es negativo. Ejemplo: <code>-3</code> o <code>-x</code>. En estos casos no hay ningún valor delante.</p>
+<p>Muchas veces se deben paréntesis para evitar ambiguedad.<br />
+Pues no es lo mismo <code>-3 + 5</code> que <code>-(3 + 5)</code>.</p>
+<h3 id="sobre-operador">Sobre operador %</h3>
+<p>Quizá el operador resto de división es el que menos te suena, pero es bastante importante. Si recordamos nuestros días de instituto, el resto de la división es lo que ha sobrado de repartir al dividir.</p>
+<p>Si tenemos 6 caramelos y los queremos repartir entre 4 amigos, caen a 1 caramelo por cabeza, es decir, el resultado entero de la división es 1, pero han sobrado 2, por lo que el resto es 2.</p>
+<p>En código lo podríamos ver así:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">var</span><span class="w"> </span><span class="n">division</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">4</span><span class="w">   </span><span class="c1"># Esto valdrá 1. Pues es una división de enteros.</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">var</span><span class="w"> </span><span class="n">resto</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">4</span><span class="w">      </span><span class="c1"># Esto será el resto de la división (6/4) es decir, 2.</span>
+</code></pre></div>
+<h2 id="operadores-booleanos">Operadores booleanos</h2>
+<p>Estas operaciones en lugar de devolver un número devuelven un booleano. Es decir, <code>true</code> o <code>false</code>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Operador</th>
+<th style="text-align: center;">Símbolo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Comparadores</td>
+<td style="text-align: center;"><code>==</code>, <code>&gt;</code>, <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;=</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">Not (negado)</td>
+<td style="text-align: center;"><code>!</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">And</td>
+<td style="text-align: center;"><code>&amp;&amp;</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">Or</td>
+<td style="text-align: center;"><code>||</code></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Expresión</th>
+<th style="text-align: center;">Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">a <code>==</code> b</td>
+<td style="text-align: center;">a es igual que b</td>
+</tr>
+<tr>
+<td style="text-align: center;">a <code>&gt;</code> b</td>
+<td style="text-align: center;">a es mayor que b</td>
+</tr>
+<tr>
+<td style="text-align: center;">a <code>&lt;</code> b</td>
+<td style="text-align: center;">a es menor que b</td>
+</tr>
+<tr>
+<td style="text-align: center;">a <code>&gt;=</code> b</td>
+<td style="text-align: center;">a es mayor o igual que b</td>
+</tr>
+<tr>
+<td style="text-align: center;">a <code>&lt;=</code> b</td>
+<td style="text-align: center;">a es menor o igual que b</td>
+</tr>
+<tr>
+<td style="text-align: center;">a <code>&amp;&amp;</code> b</td>
+<td style="text-align: center;"><code>a es true</code> y <code>b es true</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">a <code>||</code> b</td>
+<td style="text-align: center;"><code>a es true</code> o <code>b es true</code></td>
+</tr>
+</tbody>
+</table>
+<p>De cumplirse que las expresiones son correctas, la expresión devuelve <code>true</code>, en caso contrario devuelve <code>false</code>.</p>
+<h3 id="comparadores">Comparadores</h3>
+<p>Los comparadores como puedes suponer comparan variables. Sirven para saber si un valor es mayor/menor que otro, o un valor es igual a otro.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>El comparador para saber si dos variables valen lo mismo es el <code>==</code> que no confundir con el simbolo <code>=</code> el cual sirve para asignar valores a variables.</p>
+</div>
+<h4 id="ejemplo-comparaciones">Ejemplo comparaciones</h4>
+<p>Cual será el resultado que se imprimirá por pantalla tras la siguiente ejecución?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">var</span><span class="w"> </span><span class="n">a</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">var</span><span class="w"> </span><span class="n">b</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">15</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">var</span><span class="w"> </span><span class="n">c</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">b</span><span class="p">)</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">c</span><span class="p">)</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">b</span><span class="p">)</span>
+</code></pre></div>
+<details>
+<summary>respuesta</summary>
+false
+true
+false
+</details>
+<hr />
+<p>Y de esta otra?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">var</span><span class="w"> </span><span class="n">a</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">var</span><span class="w"> </span><span class="n">b</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">15</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nb">print</span><span class="p">((</span><span class="n">a</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="bp">true</span><span class="p">)</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nb">print</span><span class="p">((</span><span class="n">a</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="bp">true</span><span class="p">)</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nb">print</span><span class="p">((</span><span class="n">a</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">b</span><span class="p">))</span>
+</code></pre></div>
+<details>
+<summary>respuesta</summary>
+true
+false
+true
+</details>
+<hr />
+<h3 id="asignacion">Asignación</h3>
+<p>Como es natural podemos asignar operaciones como valor a variables. Ejemplo:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">var</span><span class="w"> </span><span class="n">a</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">var</span><span class="w"> </span><span class="n">b</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">var</span><span class="w"> </span><span class="n">c</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">bool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">5</span><span class="w">            </span><span class="c1"># c será igual a false</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="k">var</span><span class="w"> </span><span class="n">d</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">3.2</span><span class="w">      </span><span class="c1"># d será igual a 10.2</span>
+</code></pre></div>
+              
+            </div>
+          </div>
+  
+
+  
+  
+    
+    <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../1.%20Variables/" class="btn btn-neutral float-left" title="Variables"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Ejercicios%20Variables/AIntroduccion/" class="btn btn-neutral float-right" title="Introducción">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  
+</footer>
+          
+  
+  
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../1.%20Variables/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Ejercicios%20Variables/AIntroduccion/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../extra/extra.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

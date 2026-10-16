@@ -72,13 +72,30 @@
     </ul>
                 </li>
               </ul>
+              <p class="caption"><span class="caption-text">Tema 0</span></p>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../Tema0/">Tema 0</a>
-                </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Tema%200/Tema0/">Introducción a la programación</a>
+                  </li>
               </ul>
               <p class="caption"><span class="caption-text">Tema 1</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../Tema%201/Variables/">Variables</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../Tema%201/1.%20Variables/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Tema%201/2.%20Operadores/">Operadores</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Ejercicios Variables</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Tema%201/Ejercicios%20Variables/AIntroduccion/">Introducción</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Tema%201/Ejercicios%20Variables/Ejercicio1/">Ejercicio 1</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Tema%201/Ejercicios%20Variables/Ejercicio2/">Ejercicio 2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Tema%201/Ejercicios%20Variables/Solucion_ej1/">Solución ejercicio 1</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Tema%201/Ejercicios%20Variables/Solucion_ej2/">Solución ejercicio 2</a>
+                </li>
+    </ul>
                   </li>
               </ul>
       </div>
@@ -105,7 +122,7 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="preparativos">Preparativos</h1>
-<p>Antes de comenzar la introducción más teorica, vamos a asegurarnos que todos tenemos godot funcionando y sabemos ejecutar código.</p>
+<p>Antes de comenzar la introducción más teórica, vamos a asegurarnos que todos tenemos godot funcionando y sabemos ejecutar código.</p>
 <h2 id="instalacion-de-godot">Instalación de Godot</h2>
 <ul>
 <li>Para windows: <a href="https://godotengine.org/download/windows/">https://godotengine.org/download/windows/</a></li>
@@ -136,12 +153,12 @@
 <p><img alt="alt text" src="../images/create_script.png" /></p>
 <p><em>Ignoramos el resto del editor de godot por el momento.</em></p>
 <h3 id="3-llamar-al-script-como-queramos-preferiblemente-maingd">3. Llamar al script como queramos, preferiblemente <code>main.gd</code>.</h3>
-<p>Los más aventajados de la clase podeis haber supuesto que <code>.gd</code> viene de GDScript, y estaríais en lo cierto. Una galletita para vosotros -&gt; 🍪. <br />
-No os preocupeis, es sin lactosa y sin gluten :).</p>
+<p>Los más aventajados de la clase podéis haber supuesto que <code>.gd</code> viene de GDScript, y estaríais en lo cierto. Una galletita para vosotros -&gt; 🍪. <br />
+No os preocupéis, es sin lactosa y sin gluten :).</p>
 <h3 id="4-editor-de-texto">4. Editor de texto</h3>
 <p>Una vez creado nuestro <code>main.gd</code> veremos que se abre la siguiente ventana:</p>
 <p><img alt="alt text" src="../images/editor_texto_godot.png" /></p>
-<p>Esta ventana es nuestro editor de texto, donde vamos a programar. Este editor funciona como cualquier otro, de igual forma podriamos usar el bloc de notas, visual studio code, vim o lo que cada uno quiera. 
+<p>Esta ventana es nuestro editor de texto, donde vamos a programar. Este editor funciona como cualquier otro, de igual forma podríamos usar el bloc de notas, visual studio code, vim o lo que cada uno quiera. 
 Vamos a usar este editor de texto pues tiene sus ventajas para Godot y GDScript.</p>
 <div class="admonition note">
 <p class="admonition-title">Recomendación</p>
@@ -169,10 +186,10 @@ Qué crees que puede significar esta linea? qué efecto tendrá?</p>
 <p>Si necesitas ayuda para saber cómo abrir una terminal.</p>
 <ul>
 <li>
-<p>En <strong>Windows</strong> es tan fácil como abrir la carpeta, hacer <code>Shift</code> + <code>click derecho</code> en el area de la carpeta y deberias ver un botón que dice algo como "Abrir ventana de PowerShell aquí" o "Abrir terminal aquí"</p>
+<p>En <strong>Windows</strong> es tan fácil como abrir la carpeta, hacer <code>Shift</code> + <code>click derecho</code> en el área de la carpeta y deberias ver un botón que dice algo como "Abrir ventana de PowerShell aquí" o "Abrir terminal aquí"</p>
 </li>
 <li>
-<p>En <strong>Linux</strong> ya depende, pero se suele poder haciendo click derecho en el area de la carpeta y debería aparecer la opción.</p>
+<p>En <strong>Linux</strong> ya depende, pero se suele poder haciendo click derecho en el área de la carpeta y debería aparecer la opción.</p>
 </li>
 </ul>
 </div>
@@ -195,7 +212,7 @@ Qué crees que puede significar esta linea? qué efecto tendrá?</p>
 <p>Antes de continuar, quizá has notado que se abre una ventana de programa (donde no se ve nada porque no hemos programado nada que deba verse). Y que el programa no acaba. No hemos recuperado el control de la terminal y no podemos escribir más comandos.</p>
 <p>Para recuperar el control de la terminal escribe <code>ctrl</code> + <code>c</code>.</p>
 <h3 id="8-mejorar-ejecucion">8. Mejorar ejecución</h3>
-<p>Hay aluna manera de que no se abra una molesta ventana y que el programa finalice él solito? Que buena pregunta! así me gusta. Pues sí que la hay. Vamos a modificar un poco el comando que usamos para ejecutar scripts:</p>
+<p>Hay alguna manera de que no se abra una molesta ventana y que el programa finalice él solito? Que buena pregunta! así me gusta. Pues sí que la hay. Vamos a modificar un poco el comando que usamos para ejecutar scripts:</p>
 <p><code>godot -s &lt;nombre del script&gt; --headless --quit</code></p>
 <ul>
 <li>
@@ -211,7 +228,7 @@ Qué crees que puede significar esta linea? qué efecto tendrá?</p>
 <p>Para más información, consultar la documentación de Godot. <a href="docs.godotengine.org/en/stable/">docs.godotengine.org/en/stable/</a></p>
 <p>O probar el comando <code>godot --help</code> en una terminal.</p>
 </div>
-<p>Prueba de nuevo el script que hemos programado usando este nuevo comando. Verás que es mucho más comodo. </p>
+<p>Prueba de nuevo el script que hemos programado usando este nuevo comando. Verás que es mucho más cómodo. </p>
 <div class="admonition hint">
 <p class="admonition-title">Importante</p>
 <p>Acuérdate o apúntate el comando, pues vamos a usar mucho este comando en los próximos capítulos.</p>
@@ -227,7 +244,7 @@ Qué crees que puede significar esta linea? qué efecto tendrá?</p>
     <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href=".." class="btn btn-neutral float-left" title="Bienvenide a aprender a programar GDScript"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../Tema0/" class="btn btn-neutral float-right" title="Tema 0">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../Tema%200/Tema0/" class="btn btn-neutral float-right" title="Introducción a la programación">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -256,7 +273,7 @@ Qué crees que puede significar esta linea? qué efecto tendrá?</p>
       <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../Tema0/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../Tema%200/Tema0/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

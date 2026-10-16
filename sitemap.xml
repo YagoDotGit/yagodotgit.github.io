@@ -9,11 +9,35 @@
          <lastmod>2026-10-16</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Tema0/</loc>
+         <loc>https://mydomain.org/mysite/Tema%200/Tema0/</loc>
          <lastmod>2026-10-16</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Tema%201/Variables/</loc>
+         <loc>https://mydomain.org/mysite/Tema%201/1.%20Variables/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/Tema%201/2.%20Operadores/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/Tema%201/Ejercicios%20Variables/AIntroduccion/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/Tema%201/Ejercicios%20Variables/Ejercicio1/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/Tema%201/Ejercicios%20Variables/Ejercicio2/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/Tema%201/Ejercicios%20Variables/Solucion_ej1/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/Tema%201/Ejercicios%20Variables/Solucion_ej2/</loc>
          <lastmod>2026-10-16</lastmod>
     </url>
 </urlset>
