@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://mydomain.org/mysite/Tema%201/3.Condicionales/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Condicionales - Aprender a programar GDScript</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../extra/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Condicionales";
+        var mkdocs_page_input_path = "Tema 1/3.Condicionales.md";
+        var mkdocs_page_url = "/mysite/Tema%201/3.Condicionales/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Aprender a programar GDScript
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Bienvenide a aprender a programar GDScript</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../Preparativos/">Preparativos</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tema 0</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Tema%200/Tema0/">Introducción a la programación</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tema 1</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1.Variables/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.Operadores/">Operadores</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Ejercicios Variables-Operadores</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/AIntroduccion/">Introducción ejercicios</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Ejercicio1/">Ejercicio 1</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Ejercicio2/">Ejercicio 2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Solucion_ej1/">Solución ejercicio 1</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Solucion_ej2/">Solución ejercicio 2</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Condicionales</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#if-statement">If statement</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ejemplo-if-else">Ejemplo if - else:</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#pregunta">Pregunta</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4.Bucles/">Bucles</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5.Funciones/">Funciones</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Aprender a programar GDScript</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Tema 1</li>
+      <li class="breadcrumb-item active">Condicionales</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="condicionales">Condicionales</h1>
+<p>Podemos manejar el flujo de nuestro programa para poder programar comportamientos más complejos que simplemente una secuencia de instrucciones.</p>
+<p>Por ejemplo, imagina que quieres saber si un jugador tiene el suficiente dinero como para comprar un item en la tienda. Tiene que haber una forma de controlar que hacer en cada caso de la condición.</p>
+<h2 id="if-statement">If statement</h2>
+<p>Quizá te suene pues es algo que se encuentra en todos los lenguajes de una forma u otra. En GDScript funciona de la siguiente manera:</p>
+<ul>
+<li>
+<p><code>if</code> <code>&lt;condición&gt;</code> <code>:</code> - Siendo condición un booleano (<code>true</code>/<code>false</code>) o una expresión booleana, (operadores booleanos como los vistos anteriormente).</p>
+<p>En el cuerpo del if, recordemos que con un nivel de tabulacion superior, irá el código que queremos que se ejecute si la condición se cumple, es decir, el valor de <code>&lt;condición&gt;</code> es <code>true</code>.</p>
+</li>
+<li>
+<p>Y también podemos añadir  <code>else</code> <code>:</code> - Donde podemos escribir codigo que se ejecutará en el caso contrario, en el que <code>&lt;condición&gt;</code> sea <code>false</code>.</p>
+</li>
+</ul>
+<h3 id="ejemplo-if-else">Ejemplo if - else:</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">saldo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">123</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">precio_item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">if</span><span class="w"> </span><span class="n">saldo</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">precio_item</span><span class="p">:</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Puedes comprar tu item"</span><span class="p">)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"ERROR: Saldo insuficiente"</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>En realidad <code>&lt;condición&gt;</code> contará como cumplida si el valor de la misma es cualquier número distinto de 0. Y se dará como no cumplida si el valor es 0.</p>
+<ul>
+<li>0 equivale a <code>false</code></li>
+<li>cualquier numero - {0} equivale a <code>true</code></li>
+</ul>
+</div>
+<h4 id="pregunta">Pregunta</h4>
+<p>Qué se imprimirá por pantalla tras la ejecución del siguiente código?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">if</span><span class="w"> </span><span class="mi">23</span><span class="p">:</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"El Helado"</span><span class="p">)</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"La Sandía"</span><span class="p">)</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="k">if</span><span class="w"> </span><span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Me da igual"</span><span class="p">)</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="bp">false</span><span class="p">:</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">        </span><span class="nb">print</span><span class="p">(</span><span class="s2">"No me gusta nada"</span><span class="p">)</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">        </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Me gusta bastante"</span><span class="p">)</span>
+</code></pre></div>
+<details>
+<summary>respuesta</summary>
+El Helado<br>
+Me gusta bastante
+</details>
+<hr />
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Como vemos en este ejemplo los ifs se pueden anidar. Ten cuidado porque anidar demasiados ifs (ifs dentro de ifs dentro de ifs...) es una señal de que tu código podría haberse diseñado de una forma mejor.</p>
+</div>
+              
+            </div>
+          </div>
+  
+
+  
+  
+    
+    <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Ejercicios%20Variables/Solucion_ej2/" class="btn btn-neutral float-left" title="Solución ejercicio 2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../4.Bucles/" class="btn btn-neutral float-right" title="Bucles">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  
+</footer>
+          
+  
+  
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Ejercicios%20Variables/Solucion_ej2/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../4.Bucles/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../extra/extra.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
