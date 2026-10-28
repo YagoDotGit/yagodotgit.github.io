@@ -54,25 +54,27 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Tema 1</span></p>
-              <ul class="current">
+              <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../1.Variables/">Variables</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../2.Operadores/">Operadores</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Ejercicios Variables-Operadores</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/AIntroduccion/">Introducción ejercicios</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Ejercicio1/">Ejercicio 1</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Ejercicio2/">Ejercicio 2</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Solucion_ej1/">Solución ejercicio 1</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Solucion_ej2/">Solución ejercicio 2</a>
-                </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../AIntroduccion/">Introducción ejercicios</a>
                   </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ejercicios Tema 1</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ejercicios%20Variables/Ejercicio1/">Ejercicio 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ejercicios%20Variables/Ejercicio2/">Ejercicio 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ejercicios%20Variables/Solucion_ej1/">Solución ejercicio 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ejercicios%20Variables/Solucion_ej2/">Solución ejercicio 2</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tema 2</span></p>
+              <ul class="current">
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Condicionales</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#if-statement">If statement</a>
@@ -85,11 +87,13 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#elif">Elif</a>
+    </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../4.Bucles/">Bucles</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../5.Funciones/">Funciones</a>
+                  <li class="toctree-l1"><a class="" href="../../Tema 1/5.Funciones.md.md">Funciones</a>
                   </li>
               </ul>
       </div>
@@ -106,7 +110,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Tema 1</li>
+          <li class="breadcrumb-item">Tema 2</li>
       <li class="breadcrumb-item active">Condicionales</li>
     <li class="wy-breadcrumbs-aside">
     </li>
@@ -118,13 +122,16 @@
               
                 <h1 id="condicionales">Condicionales</h1>
 <p>Podemos manejar el flujo de nuestro programa para poder programar comportamientos más complejos que simplemente una secuencia de instrucciones.</p>
-<p>Por ejemplo, imagina que quieres saber si un jugador tiene el suficiente dinero como para comprar un item en la tienda. Tiene que haber una forma de controlar que hacer en cada caso de la condición.</p>
+<p>Por ejemplo, imagina que quieres saber si un jugador tiene el suficiente dinero como para comprar un item en la tienda. Tiene que haber una forma de controlar que hacer en cada caso de la condición. -&gt; </p>
+<div class="highlight"><pre><span></span><code>Tiene dinero?       -&gt; entonces compra el item
+no tiene dinero?    -&gt; entonces puerta
+</code></pre></div>
 <h2 id="if-statement">If statement</h2>
 <p>Quizá te suene pues es algo que se encuentra en todos los lenguajes de una forma u otra. En GDScript funciona de la siguiente manera:</p>
 <ul>
 <li>
 <p><code>if</code> <code>&lt;condición&gt;</code> <code>:</code> - Siendo condición un booleano (<code>true</code>/<code>false</code>) o una expresión booleana, (operadores booleanos como los vistos anteriormente).</p>
-<p>En el cuerpo del if, recordemos que con un nivel de tabulacion superior, irá el código que queremos que se ejecute si la condición se cumple, es decir, el valor de <code>&lt;condición&gt;</code> es <code>true</code>.</p>
+<p>En el cuerpo del if, recordemos que con un nivel de tabulacion superior, irá el código que queremos que se ejecute si la condición se cumple, es decir, si el valor de <code>&lt;condición&gt;</code> es <code>true</code>.</p>
 </li>
 <li>
 <p>Y también podemos añadir  <code>else</code> <code>:</code> - Donde podemos escribir codigo que se ejecutará en el caso contrario, en el que <code>&lt;condición&gt;</code> sea <code>false</code>.</p>
@@ -172,6 +179,42 @@ Me gusta bastante
 <p class="admonition-title">Warning</p>
 <p>Como vemos en este ejemplo los ifs se pueden anidar. Ten cuidado porque anidar demasiados ifs (ifs dentro de ifs dentro de ifs...) es una señal de que tu código podría haberse diseñado de una forma mejor.</p>
 </div>
+<h2 id="elif">Elif</h2>
+<p>También puedes poner varias comprobaciones en un if. Para esto usamos <code>Elif</code> que un acortamiento de <code>else</code> + <code>if</code>. </p>
+<p>Usar esto significaría algo así como decir: <code>si esto</code> haz esto <code>si esto otro</code> haz esto, <code>si ninguna</code> haz esto.</p>
+<p>Algo del rollo:</p>
+<div class="highlight"><pre><span></span><code>(if) Tienes 5 euros?    
+(elif) Y tienes 7?      
+(elif) Y tienes 10? 
+(else) sino se ha cumplido ninguna
+</code></pre></div>
+<p>Vamos a ver un ejemplo real que creo que quedará incluso más claro:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">var</span><span class="w"> </span><span class="n">saldo</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">if</span><span class="w"> </span><span class="n">saldo</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">67</span><span class="p">:</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Puedes comprar"</span><span class="p">)</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">elif</span><span class="w"> </span><span class="n">saldo</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">67</span><span class="p">:</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"No puedes comprar"</span><span class="p">)</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Jaja 67"</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<p>Todas estos elif forman parte del mismo if, y si el primer if o alguno de los elif se cumple, no se ejecutarán las comprobaciones de abajo, aunque sean true.</p>
+<p>Es decir que si hacemos:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">if</span><span class="w"> </span><span class="bp">true</span><span class="p">:</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Hola"</span><span class="p">)</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">elif</span><span class="w"> </span><span class="bp">true</span><span class="p">:</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">" caracola"</span><span class="p">)</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Jaja 67"</span><span class="p">)</span>
+</code></pre></div>
+<p>Que se mostrará por pantalla?</p>
+<details>
+<summary>respuesta</summary>
+Hola<br><br>
+Pues una vez la primera condicion se cumple, se ejecuta el código de dentro y luego salimos del bloque condicional.
+</details>
+<hr />
               
             </div>
           </div>

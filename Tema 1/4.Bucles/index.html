@@ -54,25 +54,27 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Tema 1</span></p>
-              <ul class="current">
+              <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../1.Variables/">Variables</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../2.Operadores/">Operadores</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Ejercicios Variables-Operadores</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/AIntroduccion/">Introducción ejercicios</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Ejercicio1/">Ejercicio 1</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Ejercicio2/">Ejercicio 2</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Solucion_ej1/">Solución ejercicio 1</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../Ejercicios%20Variables/Solucion_ej2/">Solución ejercicio 2</a>
-                </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../AIntroduccion/">Introducción ejercicios</a>
                   </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ejercicios Tema 1</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ejercicios%20Variables/Ejercicio1/">Ejercicio 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ejercicios%20Variables/Ejercicio2/">Ejercicio 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ejercicios%20Variables/Solucion_ej1/">Solución ejercicio 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ejercicios%20Variables/Solucion_ej2/">Solución ejercicio 2</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tema 2</span></p>
+              <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../3.Condicionales/">Condicionales</a>
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Bucles</a>
@@ -81,7 +83,7 @@
     </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../5.Funciones/">Funciones</a>
+                  <li class="toctree-l1"><a class="" href="../../Tema 1/5.Funciones.md.md">Funciones</a>
                   </li>
               </ul>
       </div>
@@ -98,7 +100,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Tema 1</li>
+          <li class="breadcrumb-item">Tema 2</li>
       <li class="breadcrumb-item active">Bucles</li>
     <li class="wy-breadcrumbs-aside">
     </li>
@@ -109,8 +111,8 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="bucles">Bucles</h1>
-<p>Los bucles son herramientas importantisimas que nos permiten controlar el flujo del código. Como su nombre te puede indicar, permiten ejecutar ciertas lineas de código las veces que haga falta. Es la mejor idea que podemos aplicar para no repetir código. En programación siempre se prioriza no repetir código.</p>
-<p>Imagina que quieres escribir todos los números del 1 al 1000 por pantalla. Quizá programar:</p>
+<p>Los bucles son herramientas importantisimas que nos permiten controlar el flujo del código. Como su nombre te puede indicar, permiten ejecutar ciertas lineas de código las veces que haga falta. Es la mejor idea que podemos aplicar para no repetir código. En programación siempre se prioriza no repetir código ;)</p>
+<p>Imagina que quieres escribir todos los números del 1 al 1000 por pantalla. Como poder puedes programar:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">print</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -119,9 +121,24 @@
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="o">...</span>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nb">print</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
 </code></pre></div>
-<p>Esto es un poco la muerte a pellizcos. Podemos conseguir esto de forma muy sencilla.</p>
+<p>Esto es un poco la muerte a pellizcos, no te parece? Podemos conseguir esto de forma muy sencilla con bucles.</p>
 <h2 id="bucle-while">Bucle while</h2>
-<p>while</p>
+<p><code>while</code> <code>&lt;condicion&gt;</code> <code>:</code> - Mientras se cumpla la condición, lo que haya dentro del bucle se ejecutará una y otra vez.</p>
+<p>Esto quiere decir que si la condición es siempre True, jamás se detendrá la ejecución y pues normalmente no queremos eso.</p>
+<p>Como podemos usar esta herramienta para escribir los números del 1 al 1000? Pues aquí un ejemplo:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">var</span><span class="w"> </span><span class="n">i</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">while</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">1000</span><span class="p">:</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="n">i</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="w">  </span><span class="c1"># Equivale a i = i + 1</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"FIN"</span><span class="p">)</span>
+</code></pre></div>
+<p>Este código irá escribiendo el valor de la variable <code>i</code> mientras va aumentando de 1 en 1 en cada iteración. Cuando la variable i sea igual o mayor a 1000 entonces el bucle se detendrá y se continuará la ejecución del código, escribieno "FIN".</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>También existe el bucle for (otro tipo de bucle) pero el bucle while nos da todo lo que necesitamos, así que de momento este será el único bucle que necesitamos.</p>
+</div>
               
             </div>
           </div>
@@ -133,7 +150,6 @@
     <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../3.Condicionales/" class="btn btn-neutral float-left" title="Condicionales"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../5.Funciones/" class="btn btn-neutral float-right" title="Funciones">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -161,8 +177,6 @@
     
       <span><a href="../3.Condicionales/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-    
-      <span><a href="../5.Funciones/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
