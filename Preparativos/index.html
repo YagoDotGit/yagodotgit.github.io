@@ -132,7 +132,8 @@
 <h2 id="instalacion-de-godot">Instalación de Godot</h2>
 <ul>
 <li>Para windows: <a href="https://godotengine.org/download/windows/">https://godotengine.org/download/windows/</a></li>
-<li>Para linux: <a href="https://godotengine.org/download/linux/">https://godotengine.org/download/linux/</a></li>
+<li>Para linux preferiblemente desde el gestor de paquetes de cada distro.<br />
+O sino: <a href="https://godotengine.org/download/linux/">https://godotengine.org/download/linux/</a></li>
 </ul>
 <h2 id="nuestro-primer-programa">Nuestro primer programa</h2>
 <p>Debido a que no vamos a hacer juegos todavía, sino a ejecutar código de Godot directamente en la terminal sin una escena de juego como tal. Digamos que primero vamos a aprender a hacer scripts (pequeños programas), no juegos.</p>
@@ -184,9 +185,19 @@ Vamos a usar este editor de texto pues tiene sus ventajas para Godot y GDScript.
 </code></pre></div>
 <p>Ignoremos las dos primeras lineas por el momento, pero fíjate en <code>print("Hola mundo")</code><br />
 Qué crees que puede significar esta linea? qué efecto tendrá?</p>
+<details>
+<summary>respuesta</summary>
+Mostrará el mensaje "Hola mundo" en la terminal.
+</details>
+<hr />
 <h3 id="6-ejecucion-de-codigo">6. Ejecución de código</h3>
+<div class="admonition warning">
+<p class="admonition-title">Estás en Windows?</p>
+<p>De ser así necesitas hacer unos pasos extra para poder ejecutar el código.<br />
+--&gt; <a href="../PreparativosWindows/">Preparativos Windows</a></p>
+</div>
 <p>Este código que hemos escrito no es apto para ser ejecutado directamente por godot como si fuera una escena de un juego. Pero sí puede ser ejecutado por una terminal usando Godot a modo de interprete de este script.</p>
-<p>En resumen, este código solo puede ser <strong>ejecutado en terminal</strong>. Para ello necesitamos abrir una terminal en la carpeta donde se encuentra nuestro script (el <code>main.gd</code>), el cual está en la carpeta donde hayamos creado el proyecto.</p>
+<p>En resumen, este código aislado solo puede ser <strong>ejecutado en terminal</strong>. Para ello necesitamos abrir una terminal en la carpeta donde se encuentra nuestro script (el <code>main.gd</code>), el cual está en la carpeta donde hayamos creado el proyecto.</p>
 <div class="admonition note">
 <p class="admonition-title">Abrir una terminal</p>
 <p>Si necesitas ayuda para saber cómo abrir una terminal.</p>
@@ -198,6 +209,7 @@ Qué crees que puede significar esta linea? qué efecto tendrá?</p>
 <p>En <strong>Linux</strong> ya depende, pero se suele poder haciendo click derecho en el área de la carpeta y debería aparecer la opción.</p>
 </li>
 </ul>
+<p>* Alternativamente puedes buscar y abrir la aplicación de terminal y desde el terminal navegar hacia la carpeta deseada. Comando <code>cd &lt;ruta&gt;</code> tanto en linux como windows.</p>
 </div>
 <p>Ahora que tenemos una terminal abierta en la carpeta donde tenemos el script, para ejecutarlo escribimos el siguiente comando:</p>
 <p><code>godot -s &lt;nombre del script&gt;</code></p>
@@ -215,7 +227,7 @@ Qué crees que puede significar esta linea? qué efecto tendrá?</p>
 <p>Has ejecutado el script? Deberías ver que en la terminal se ha escrito "Hola mundo".</p>
 <p><img alt="alt text" src="../images/ejecucion_hola_mundo.png" /></p>
 <p>Si es así, FELICIDADES! Toma una galletita -&gt; 🍪</p>
-<p>Antes de continuar, quizá has notado que se abre una ventana de programa (donde no se ve nada porque no hemos programado nada que deba verse). Y que el programa no acaba. No hemos recuperado el control de la terminal y no podemos escribir más comandos.</p>
+<p>Antes de continuar, quizá has notado que se abre una ventana de programa (donde no se ve nada porque no hemos programado nada que deba verse). También puedes ver que el programa no acaba, esto implica que no hemos recuperado el control de la terminal y no podemos escribir más comandos.</p>
 <p>Para recuperar el control de la terminal escribe <code>ctrl</code> + <code>c</code>.</p>
 <h3 id="8-mejorar-ejecucion">8. Mejorar ejecución</h3>
 <p>Hay alguna manera de que no se abra una molesta ventana y que el programa finalice él solito? Que buena pregunta! así me gusta. Pues sí que la hay. Vamos a modificar un poco el comando que usamos para ejecutar scripts:</p>

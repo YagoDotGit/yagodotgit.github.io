@@ -2,54 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://mydomain.org/mysite/</loc>
-         <lastmod>2026-10-17</lastmod>
+         <lastmod>2026-10-28</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/Preparativos/</loc>
-         <lastmod>2026-10-17</lastmod>
+         <lastmod>2026-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/PreparativosWindows/</loc>
+         <lastmod>2026-10-28</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/Tema%200/Tema0/</loc>
-         <lastmod>2026-10-17</lastmod>
+         <lastmod>2026-10-28</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/Tema%201/1.Variables/</loc>
-         <lastmod>2026-10-17</lastmod>
+         <lastmod>2026-10-28</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/Tema%201/2.Operadores/</loc>
-         <lastmod>2026-10-17</lastmod>
+         <lastmod>2026-10-28</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/Tema%201/3.Condicionales/</loc>
-         <lastmod>2026-10-17</lastmod>
+         <lastmod>2026-10-28</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/Tema%201/4.Bucles/</loc>
-         <lastmod>2026-10-17</lastmod>
+         <lastmod>2026-10-28</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/Tema%201/5.Funciones/</loc>
-         <lastmod>2026-10-17</lastmod>
+         <lastmod>2026-10-28</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/Tema%201/Ejercicios%20Variables/AIntroduccion/</loc>
-         <lastmod>2026-10-17</lastmod>
+         <lastmod>2026-10-28</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/Tema%201/Ejercicios%20Variables/Ejercicio1/</loc>
-         <lastmod>2026-10-17</lastmod>
+         <lastmod>2026-10-28</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/Tema%201/Ejercicios%20Variables/Ejercicio2/</loc>
-         <lastmod>2026-10-17</lastmod>
+         <lastmod>2026-10-28</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/Tema%201/Ejercicios%20Variables/Solucion_ej1/</loc>
-         <lastmod>2026-10-17</lastmod>
+         <lastmod>2026-10-28</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/Tema%201/Ejercicios%20Variables/Solucion_ej2/</loc>
-         <lastmod>2026-10-17</lastmod>
+         <lastmod>2026-10-28</lastmod>
     </url>
 </urlset>

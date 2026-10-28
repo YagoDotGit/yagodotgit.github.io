@@ -127,7 +127,7 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="variables">Variables</h1>
-<p>La programación es en realidad un proceso de leer datos y hacer operaciones y devolver un resultado. Los principales elementos con los que operar son nuestras variables. Esto son cajitas donde guardamos números. Además literal.</p>
+<p>La programación consiste en hacer programas, que son en resumen un proceso que lee datos, hace operaciones con ellos y devuelve un resultado. Los principales elementos con los que operar son nuestras variables. Esto son cajitas donde guardamos números. (literal fr)</p>
 <h2 id="basic-built-in-types">Basic built-in types</h2>
 <p>En GDScript hay muchos tipos de variables, pero las variables simples (tipos simples de datos) solo hay 3.</p>
 <ul>
@@ -164,7 +164,7 @@ Ej. <code>x = 1.14</code>  </p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Las variables no inicializadas no pueden ser leidas/usadas para algo que no sea asignarles un valor.<br />
-Ejemplos mal: <code>print(x)</code> o <code>var y: float = x + 3</code></p>
+Ejemplos mal: Siendo <code>x</code> una variable sin inicializar, hacer <code>print(x)</code> o <code>var y: float = x + 3</code></p>
 </div>
 <h3 id="variables-tipadas-o-no-tipadas">Variables tipadas o no tipadas</h3>
 <p>Hasta ahora hemos especificado el tipo de las variables al crear una, esto realmente no es obligatorio en lenguajes como GDScript o Python, pero es altamente recomendable. De hecho en muchos lenguajes es más que obligatorio.</p>
@@ -177,7 +177,7 @@ Ejemplos mal: <code>print(x)</code> o <code>var y: float = x + 3</code></p>
 <p>* Se permiten excepciones, puede haber justificación.</p>
 <h2 id="strings">Strings</h2>
 <p>Los strings no son un tipo simple como los anteriores, pero son importantísimos.</p>
-<p>Un String es una cadena de caracteres, esto puede ser una letra, una frase entera o un archivo de texto entero. Los Strings son objetos (ya veremos lo que son). La idea es que son un objeto más complejo y con mas chicha que las variables que acabamos de ver. Pero es ideal explicarlo ya porque es uno de los tipos más utilizados.</p>
+<p>Un String es una cadena de caracteres, esto puede ser una letra, una frase entera o un archivo de texto entero. Los Strings son objetos (ya veremos lo que son). La idea es que son un objeto más complejo y con mas chicha que las variables que acabamos de ver. </p>
 <ul>
 <li>
 <p>Todos los tipos complejos se escriben con la primera mayúscula, <code>String</code>. Los únicos tipos simples (empiezan en minúsculas) son los vistos <code>int</code>, <code>float</code>, <code>bool</code>.</p>
@@ -211,8 +211,8 @@ Sí.<br>La variable saludo en si es exactamente lo mismo que "Hola mundo". Una f
 </p>
 
 <p>En esta imagen vemos que tenemos una variable numérica con el valor 42. Lo que vemos a la izquierda es la posición de la memoria del ordenador donde se encuentra este número, es algo así como la dirección de tu casa, pero para variables.</p>
-<p>En los lenguajes de programación de alto nivel no tenemos que especificar la dirección de memoria de una variable que queremos cambiar, pues les ponemos nombres y ya. En nuestro ejemplo habíamos llamado a la variable <code>x</code> y Godot solito sabe cuál es la dirección de memoria de esta variable <code>x</code>.</p>
-<p>Esta chapa puede no parecer relevante, pero en el futuro veremos tipos de objetos más complejos que estos y su correcto uso parte de entender como se alojan en memoria y que este concepto existe.</p>
+<p>En los lenguajes de programación de alto nivel no tenemos que especificar la dirección de memoria de una variable que queremos referenciar, pues les ponemos nombres y ya. En nuestro ejemplo habíamos llamado a la variable <code>x</code> y Godot solito sabe cuál es la dirección de memoria de esta variable <code>x</code>.</p>
+<p>Esta chapa puede no parecer relevante, pero en el futuro veremos tipos de objetos más complejos, en estos, su correcto uso depende en gran parte de entender cómo se alojan en memoria.</p>
 <p>Pinceladas de esta complejidad. Un String, en cuántas cajitas cabe? 1?, 2?, infinitas?, se van añadiendo?.<br />
 Ya lo veremos jeje.</p>
 <div class="admonition note">
