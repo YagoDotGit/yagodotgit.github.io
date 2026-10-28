@@ -62,16 +62,16 @@
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Introducción ejercicios</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#como-hacer-ejercicios-basicos">Cómo hacer ejercicios básicos</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#identacion">Identación</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#ejemplo-incorrecto">Ejemplo incorrecto</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#ejemplo-correcto">Ejemplo correcto</a>
+    <li class="toctree-l2"><a class="reference internal" href="#identacion">Identación</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ejemplo-incorrecto">Ejemplo incorrecto</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ejemplo-correcto">Ejemplo correcto</a>
     </li>
         </ul>
     </li>
-        </ul>
+    <li class="toctree-l2"><a class="reference internal" href="#comentarios">Comentarios</a>
     </li>
     </ul>
                   </li>
@@ -82,9 +82,13 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../Ejercicios%20Variables/Ejercicio2/">Ejercicio 2</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ejercicios%20Variables/Ejercicio3/">Ejercicio 3</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../Ejercicios%20Variables/Solucion_ej1/">Solución ejercicio 1</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../Ejercicios%20Variables/Solucion_ej2/">Solución ejercicio 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ejercicios%20Variables/Solucion_ej3/">Solución ejercicio 3</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Tema 2</span></p>
@@ -129,7 +133,11 @@
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Hola mundo"</span><span class="p">)</span>
 </code></pre></div>
 <p>Hemos visto que nuestro código que se ejecuta con el comando <code>godot -s &lt;nombre del script&gt; --headless --quit</code> es el contenido en la función <code>_init()</code>. Esta función es la que es llamada automaticamente al ejecutarse este script. En el futuro veremos que es lo que sucede realmente, de momento quédate con que para ejecutar más lineas de código debemos contenerlos dentro de la función <code>_init</code>.</p>
-<h3 id="identacion">Identación</h3>
+<p>Puedes hacer todos los ejercicios en nuestro <code>main.gds</code> borrando el contenido de <code>_init()</code> o bien puedes ir creando archivos rollo: <code>ejercicio_1.gds</code>, <code>ejercicio_2.gds</code>. Solo que en este caso el comando para ejecutar cada script será diferente.</p>
+<p>Incluso si quieres puedes meter estos archivos en carpetas aunque en el comando de ejecución te tocará poner la ruta al archivo. Ejemplo:</p>
+<p><code>godot -s ejercicios/ejercicio_1.gds --headless --quit</code></p>
+<p>Donde <code>ejercicios</code> es el nombre de la carpeta donde se encuentra el ejercicio 1.</p>
+<h2 id="identacion">Identación</h2>
 <p>En GDScript funciona similar a python. Para contener código dentro de un bucle o función debemos escribir las cosas un nivel de identación por encima. Esto se hace escribiendo <code>\tabs</code>, la tecla tabulador, que sería algo así como escribir 4 espacios.</p>
 <p>Un ejemplo para visualizar la correcta identación:</p>
 <div class="highlight"><pre><span></span><code>Función:
@@ -164,6 +172,20 @@ MAL MUY MAL. Este código ni siquiera va a ejecutarse. Te animo a probarlo :)</p
 <p>He dejado una posible solución a cada ejercicio. PROHIBIDO MIRAR LA SOLUCIÓN SI NO HAS HECHO EL EJERCICIO O INTENTADO HACERLO PECHÁ.</p>
 <p>Tengo ojos en todas partes, lo sabré... 👁️</p>
 <p>Y nada de que la ia te haga los ejercicios. Van poco a poco, no te procupes no vas a tener problemas. A las muy malas intenta entender la solución.</p>
+</div>
+<h2 id="comentarios">Comentarios</h2>
+<p>En la gran mayoría de lenguajes se pueden escribir comentarios, esto son lineas de texto que serán ignoradas a la hora de ejecutar el código, son simplemente anotaciones que dejamos los programadores.</p>
+<p>En GDScript se usa el caracter <code>#</code> para escribir un comentario tras este símbolo.</p>
+<p>Ejemplo</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">var</span><span class="w"> </span><span class="n">a</span><span class="p">:</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">32</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1"># Comentario: Vamos a hacer una suma</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">a</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">21</span><span class="w"> </span><span class="c1"># Comentario: Haciendo suma</span>
+</code></pre></div>
+<p>Puedes poner los comentarios al final de una línea o en una línea vacía.</p>
+<div class="admonition hint">
+<p class="admonition-title">Sugerencia</p>
+<p>Usa los comentarios para explicar algo de tu código y que te sea más facil seguir entendiendo que hace una vez pasado un tiempo.</p>
 </div>
               
             </div>

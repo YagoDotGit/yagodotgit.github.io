@@ -41,10 +41,6 @@
          <lastmod>2026-10-28</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Tema%201/Ejercicios%20Variables/AIntroduccion/</loc>
-         <lastmod>2026-10-28</lastmod>
-    </url>
-    <url>
          <loc>https://mydomain.org/mysite/Tema%201/Ejercicios%20Variables/Ejercicio1/</loc>
          <lastmod>2026-10-28</lastmod>
     </url>
@@ -53,11 +49,19 @@
          <lastmod>2026-10-28</lastmod>
     </url>
     <url>
+         <loc>https://mydomain.org/mysite/Tema%201/Ejercicios%20Variables/Ejercicio3/</loc>
+         <lastmod>2026-10-28</lastmod>
+    </url>
+    <url>
          <loc>https://mydomain.org/mysite/Tema%201/Ejercicios%20Variables/Solucion_ej1/</loc>
          <lastmod>2026-10-28</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/Tema%201/Ejercicios%20Variables/Solucion_ej2/</loc>
+         <lastmod>2026-10-28</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/Tema%201/Ejercicios%20Variables/Solucion_ej3/</loc>
          <lastmod>2026-10-28</lastmod>
     </url>
 </urlset>
